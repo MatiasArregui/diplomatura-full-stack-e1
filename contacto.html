@@ -9,22 +9,83 @@
     <title>RAM repuestos</title>
 </head>
 <body>
-    <!-- Encabezado y menu principal -->
-    <header class="container-fluid m-1 cabezal-inicio">
+<!------------------------------------------- ENCABEZADO DE LA PAGINA PRINCIPAL Y LAS DERIVADAS ---------------------------------------->
+    <!-- Encabezado y menu principal para dispositivos de escritorios-->
+    <header class="container-fluid cabezal-inicio shadow d-none d-md-block">
         <nav class="nav-padre">
             <div>
                 <h1>RAM</h1>
                 <p>Repuestos de motos</p>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu d-none d-md-flex">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./presentacion.html">Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- Encabezado y menu principal para dispositivos moviles-->
+    <header class="container-fluid cabezal-inicio shadow d-md-none">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="d-flex flex-column">
+            <h3 class="mb-0">RAM</h3>
+            <p class="mb-0">Repuestos de motos</p>
+          </div>
+          <!-- Button que se desplega -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menú y contenido que se muestra al desplegarse la barra -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./presentacion.html">Sobre nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!------------------------------------------------------------ CONTENIDO PRINCIPAL, DONDE SE MUESTRA EL FORMULARIO-------------------------------------------->
+    <main class="container shadow border p-3 form-de-contacto my-5">
+      <h2 class="mb-4 text-center">Formulario de Contacto</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+        </div>
+
+        <div class="mb-3">
+          <label for="correo" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="correo" placeholder="tuemail@ejemplo.com">
+        </div>
+
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-danger w-100">Enviar</button>
+      </form>
+    </main>
+<!-------------------------------------- PIE DE PAGINA DE PRINCIPAL Y LAS DERIVADAS ----------------------------------------->
+    <footer class="container-fluid pie-de-pagina fixed-bottom d-md-none">
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+    <footer class="container-fluid pie-de-pagina d-none d-md-flex">
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+
     <!-- Funcionabilidades dinamicas con js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

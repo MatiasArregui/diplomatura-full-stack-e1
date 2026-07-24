@@ -9,22 +9,87 @@
     <title>RAM repuestos</title>
 </head>
 <body>
-    <!-- Encabezado y menu principal -->
-    <header class="container-fluid m-1 cabezal-inicio">
+<!------------------------------------------- ENCABEZADO DE LA PAGINA PRINCIPAL Y LAS DERIVADAS ---------------------------------------->
+    <!-- Encabezado y menu principal para dispositivos de escritorios-->
+    <header class="container-fluid cabezal-inicio shadow d-none d-md-block">
         <nav class="nav-padre">
             <div>
                 <h1>RAM</h1>
                 <p>Repuestos de motos</p>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu d-none d-md-flex">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./presentacion.html">Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- Encabezado y menu principal para dispositivos moviles-->
+    <header class="container-fluid cabezal-inicio shadow d-md-none">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="d-flex flex-column">
+            <h3 class="mb-0">RAM</h3>
+            <p class="mb-0">Repuestos de motos</p>
+          </div>
+          <!-- Button que se desplega -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menú y contenido que se muestra al desplegarse la barra -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./presentacion.html">Sobre nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<!------------------------------------------------------------ CONTENIDO PRINCIPAL, DONDE SE MUESTRA EL FORMULARIO-------------------------------------------->
+<main class="container my-5">
+  <section>
+    <article class="card shadow-lg border-0 contenido-presentacion">
+      <div class="card-header bg-dark text-white text-center">
+        <h3 class="mb-0">RAM Repuestos</h3>
+      </div>
+      <div class="card-body">
+        <div class="text-center mb-4">
+          <img src="img/log_1.jpg" alt="Logo RAM Repuestos" class="img-fluid rounded shadow-sm" style="max-width: 250px;">
+        </div>
+        <p class="lead text-muted">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eum vero corrupti quia aliquid fugiat consectetur nam expedita deleniti tempora inventore doloribus dolores voluptate amet rerum tempore facilis repudiandae, mollitia sit fuga molestias consequuntur iusto est? Voluptates deserunt ut maxime non libero rem. Eaque voluptatem commodi magnam magni repellendus modi, quaerat, veniam beatae iure, inventore distinctio omnis ipsam maiores dolore! Rerum eveniet placeat a tempora deleniti qui eos, ipsam dignissimos delectus pariatur esse error corrupti quas vitae accusamus ullam eum dolor consequatur non deserunt distinctio nostrum. Cum vel nihil, veniam enim recusandae voluptate adipisci quae odit ad sapiente sunt reprehenderit delectus, quam iusto eligendi est vitae odio et. Voluptatum sed sapiente quibusdam! Velit architecto culpa necessitatibus esse quidem blanditiis fugit, doloribus, consequuntur qui molestias sapiente unde tempore fugiat ipsa. Voluptates ad harum voluptas vel quasi laudantium quisquam eaque delectus consequatur excepturi itaque sequi architecto, accusamus cupiditate dolores beatae mollitia pariatur, a tenetur suscipit doloribus! Veritatis dolor facilis magni at quidem corporis alias. Exercitationem placeat consequuntur reiciendis facere unde, error, possimus eveniet nulla dolorum enim obcaecati totam quasi consectetur voluptatibus molestiae deleniti quaerat? Ratione, ex possimus! A necessitatibus sequi, voluptate magni quis reprehenderit in eligendi ipsa! Illum maiores voluptate eveniet, voluptas praesentium magnam blanditiis exercitationem voluptatibus voluptatem consequatur atque itaque, ducimus neque quas adipisci iste aperiam totam porro. Nesciunt itaque quos quas atque omnis laudantium recusandae, illum amet hic iure neque porro, quibusdam dolorem odio fugiat dignissimos. Maiores laborum et qui facere officiis sequi perferendis velit quidem fuga quisquam exercitationem ipsum iusto molestias necessitatibus natus sapiente soluta laudantium autem culpa, est, voluptatem ullam? Reiciendis alias obcaecati ullam. Consectetur iste, aliquam quaerat error rem odio laboriosam in beatae blanditiis ab et. Voluptates, provident mollitia. Pariatur, facere ullam sapiente sint cum temporibus eaque ex quia doloribus ducimus unde tempore, ea soluta eum. Voluptas aliquam quis voluptatum nemo quo amet. Quis ullam tempora doloremque id, deleniti, quae, ipsa reiciendis eaque fuga dolor nobis iusto quas. Hic magni omnis quas nobis debitis earum, labore numquam, ad obcaecati accusamus, ea harum eligendi beatae pariatur fuga quos ducimus illo architecto laborum nihil at molestiae? Laborum vitae quibusdam perferendis, a exercitationem autem minus eveniet iusto consequatur non corporis illo beatae, aperiam dignissimos eaque architecto placeat tenetur. Officia, eveniet maiores porro laboriosam quidem rerum doloremque sint, reprehenderit blanditiis suscipit consequuntur, architecto illum assumenda eius quae alias totam! Placeat, quo nisi minus corrupti accusamus, sed earum eveniet fuga, illo libero ratione voluptate repellat illum delectus. Molestias, similique. Alias tenetur eius vero, odio, vel quisquam, sed debitis perspiciatis molestias explicabo eos!
+        </p>
+        <div class="map-circle">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13568.552963642906!2d-65.01122674549445!3d-31.76671528563047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d28ad555c910f%3A0x993a1048154e1737!2sX5889%20Arroyo%20de%20Los%20Patos%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1784918715542!5m2!1ses-419!2sar" 
+                      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </div>
+      </div>
+      <div class="card-footer text-center bg-light">
+        <small class="text-muted">Ubicación: Arroyo de los Patos, Traslasierra</small>
+      </div>
+    </article>
+  </section>
+</main>
+
+
+<!-------------------------------------- PIE DE PAGINA DE PRINCIPAL Y LAS DERIVADAS ----------------------------------------->
+    <footer class="container-fluid pie-de-pagina mt-auto">
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+
     <!-- Funcionabilidades dinamicas con js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>

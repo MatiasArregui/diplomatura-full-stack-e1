@@ -9,42 +9,94 @@
     <title>RAM repuestos</title>
 </head>
 <body>
-    <!-- Encabezado y menu principal -->
-    <header class="container-fluid cabezal-inicio">
+
+<!------------------------------------------- ENCABEZADO DE LA PAGINA PRINCIPAL Y LAS DERIVADAS ---------------------------------------->
+    <!-- Encabezado y menu principal para dispositivos de escritorios-->
+    <header class="container-fluid cabezal-inicio shadow d-none d-md-block">
         <nav class="nav-padre">
             <div>
                 <h1>RAM</h1>
                 <p>Repuestos de motos</p>
             </div>
-            <ul class="nav-menu">
+            <ul class="nav-menu d-none d-md-flex">
                 <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
                 <li><a href="./presentacion.html">Sobre nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container caja-principal">
-        <section class="row">
-            <article class="col-6">
-                <h3>Kit de Transmision</h3>
-                <img src="img/kit_transmision_1.jpg" alt="">
-                <p>Precio $12.000</p>
-            </article>
-            <article class="col-6">
-                <h3>Kit de Transmision</h3>
-                <img src="img/kit_transmision_1.jpg" alt="">
-                <p>Precio $12.000</p>
-            </article>
-            <article class="col-6">
-                <h3>Kit de Transmision</h3>
-                <img src="img/kit_transmision_1.jpg" alt="">
-                <p>Precio $12.000</p>
-            </article>
+    <!-- Encabezado y menu principal para dispositivos moviles-->
+    <header class="container-fluid cabezal-inicio shadow d-md-none">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <div class="d-flex flex-column">
+            <h3 class="mb-0">RAM</h3>
+            <p class="mb-0">Repuestos de motos</p>
+          </div>
+          <!-- Button que se desplega -->
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Menú y contenido que se muestra al desplegarse la barra -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./presentacion.html">Sobre nosotros</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<!------------------------------------------------------------ CONTENIDO PRINCIPAL, DONDE SE MUESTRAN LOS REPUESTOS -------------------------------------------->
+    <main class="caja-principal container">
+        <section class="caja-productos">
+          <article>
+            <h3>Filtro de aire</h3>
+            <img src="img/FILTRO AIRE CB125 GLH 150.jpg" alt="Kit de transmisión" class="rounded shadow">
+            <p class="">Precio $12.000</p>
+          </article>
+
+          <article>
+            <h3>Guiños Titan cg150</h3>
+            <img src="img/guinos titan y similes.jpg" alt="Kit de transmisión" class="rounded shadow">
+            <p class="">Precio $14.000</p>
+          </article>
+
+          <article>
+            <h3>Llave de contacto</h3>
+            <img src="img/LLAVE CONTACTO HONDA WAVE AFS 110110S.jpg" alt="Kit de transmisión" class="rounded shadow">
+            <p class="">Precio $18.000</p>
+          </article>
+          <article>
+            <h3>Bateria OKN</h3>
+            <img src="img/BATERIA OKN.jpg" alt="Kit de transmisión" class="rounded shadow">
+            <p class="">Precio $20.000</p>
+          </article>
+          <article>
+            <h3>Aceite Castrol Actevo</h3>
+            <img src="img/CASTROL ACTEVO 20W50.jpg" alt="Kit de transmisión" class="rounded shadow">
+            <p class="">Precio $15.000</p>
+          </article>
         </section>
     </main>
-    <footer class="container-fluid pie-de-pagina">
+<!-------------------------------------- PIE DE PAGINA DE PRINCIPAL Y LAS DERIVADAS ----------------------------------------->
+    <!-- <footer class="container-fluid pie-de-pagina d-none d-lg-flex fixed-bottom">
+        <p>Todos los derechos reservados ©</p>
+    </footer> -->
+    <footer class="container-fluid pie-de-pagina mt-auto">
         <p>Todos los derechos reservados ©</p>
     </footer>
+
     <!-- Funcionabilidades dinamicas con js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
