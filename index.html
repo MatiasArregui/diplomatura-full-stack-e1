@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <!-- Estilos de CSS Y BOOTSTRAP5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
     <title>RAM repuestos</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- Encabezado y menu principal -->
+    <header class="container-fluid cabezal-inicio">
+        <nav class="nav-padre">
+            <div>
+                <h1>RAM</h1>
+                <p>Repuestos de motos</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./presentacion.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container caja-principal">
+        <section class="row">
+            <article class="col-6">
+                <h3>Kit de Transmision</h3>
+                <img src="img/kit_transmision_1.jpg" alt="">
+                <p>Precio $12.000</p>
+            </article>
+            <article class="col-6">
+                <h3>Kit de Transmision</h3>
+                <img src="img/kit_transmision_1.jpg" alt="">
+                <p>Precio $12.000</p>
+            </article>
+            <article class="col-6">
+                <h3>Kit de Transmision</h3>
+                <img src="img/kit_transmision_1.jpg" alt="">
+                <p>Precio $12.000</p>
+            </article>
+        </section>
+    </main>
+    <footer class="container-fluid pie-de-pagina">
+        <p>Todos los derechos reservados ©</p>
+    </footer>
+    <!-- Funcionabilidades dinamicas con js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

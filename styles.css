@@ -1,0 +1,43 @@
+.cabezal-inicio{
+    background-color: rgba(0, 0, 0, 0.948);
+    color: rgba(255, 0, 0, 0.842);
+    border-radius: 2px 0px;
+}
+.nav-padre{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none; 
+}
+.nav-menu li{
+    margin: 20px;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.842);
+}
+
+.caja-principal{
+    background-color: blue;
+    margin: 10px auto;
+}
+
+
+
+
+.pie-de-pagina{
+    background-color: rgba(0, 0, 0, 0.948);;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.pie-de-pagina p {
+    color: white;
+    margin: auto;
+    padding: 15px;
+}
